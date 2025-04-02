@@ -1,4 +1,4 @@
-If you're converting plaintext to audio you can probably use an LLM in place of the latex to python scripts. The important points to maintain are:
+If you're converting plaintext to audio you can probably use an LLM in place of the latex to python scripts to generate the python strings. The important points to maintain are:
 
 1. Keep each text chunk under 4000 characters (OAI TTS model input limit)
 2. Ensure each chunk ends at a paragrpah boundary (in case the stitching together of .wav files isn't seamless)
